@@ -1,0 +1,158 @@
+body {
+margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #1f004d;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}  /*This is the navigation bar fill in background color*/
+
+
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 90px;
+  height: 90px;
+  border-bottom: 1px solid #888;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+} /*This specifies the navigation bar's font style*/
+
+.nav a:hover {
+  background-color: #6600ff; /*The color code here determines which color is used as the background color*/
+} /*This code here shows the Navigation bar hover fill in color. When you hover your cursor over the Navigation bar text, a background fill in color will appear behinde the text*/
+
+.nav a.active {  /*The code used here, removes the bullet points formatting from the Unstructured list format.*/
+  background-color: #33004d;
+  color: #33004d;
+  cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: solid;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  } /*the Size, fotmatting, width and other physical properties of the font in the Navigation bar, and the size of the bar itself is handled by this code here.*/
+
+
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;}   /* Allows the navigation bar to be placed vertically, instead of horizontally */
+
+  /Options 2 - Float
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 900px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color:   #1f004d; /*The upper navigation bar's color is split into three parts, left, right and centre. This code here deals with the left and right colors of the navigation bar.*/
+  }
+
+}
+
+
+
+
+/*<!--=============================================================================
+    VIDEO
+  ============================================================================= -->*/
+
+body {
+  margin: 0;
+  padding: 0;
+/*  This is a Background backup in case if the video file cannot be loaded, such as timeout due to with slower connections or if the browser cannot handle it */
+  background: #333;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#video-background {
+/*  The next lines of code, involves making the video fullscreen  */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+article {
+/* A border that should have gone around the website, however for some reason the border has dissapeared, and I can't figure out how to get it back at this moment  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 10px solid rgb(221, 160, 221);
+  margin: 10px;
+}
+
+@font-face {
+    font-family: 'outrun'; /*a custom name identifying your custom font*/
+    src: url('fonts/outrun.ttf'); /*file structure to font*/
+}
+
+h1 {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  font-size: 106px;
+  letter-spacing: 3px;
+  color:  #ff0000;  /*I chose this color with this font because it seems really outrun*/
+  font-family: outrun, sans-serif; /*The first font listed is the main font, while the next font listed id the backup font to be used by the system is the forst font is unavailable*/
+  text-align: center; /* cantres the text to the middle of the display*/
+}
+
+@font-face {
+    font-family: 'devil'; /*a custom name identifying your custom font*/
+    src: url('fonts/devilbreezebold.ttf'); /*file structure identifying your font*/
+}
+
+h1 span {
+  font-family: devil;    /*Displays the height, color, and the font style of the secondary text, which is underneath the main text*/
+  letter-spacing: 0;
+  font-weight: 300;
+  color: #800000;
+  font-size: 46px;
+  line-height: 34px;
+}
+
+h1 span a {
+  color: #800000; /* The underlined text has a seprate color than the regular text. We chose the same color "#800000" so that both texts would match*/
+}
+
+
+
+
+
+.image1
+{width:200px;height:200px;}
+.image2
+{width:300px;height:300px;}
+
+
+/*<!--li {display: inline;
+     }-->*/
+/*img^*&%&%^*{
+    position:absolute;
+    top:55%;
+    left:10%;*/
